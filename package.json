@@ -1,0 +1,14 @@
+{
+  "name": "27--nowbie",
+  "version": "1.0.0",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "npx sass --watch scss/main.scss:css/css.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
+}

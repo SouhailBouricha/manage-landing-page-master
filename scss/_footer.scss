@@ -1,0 +1,221 @@
+.footer {
+  background-color: $Very-Dark-Blue;
+  &_con {
+    width: 82.9%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 6.4rem 0rem;
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
+    &_part1 {
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+      &_logo {
+        margin-bottom: 8.9rem;
+        @media screen and (max-width: 900px) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+      &_ico {
+        display: flex;
+        @media screen and (max-width: 900px) {
+          display: none;
+          visibility: hidden;
+        }
+        &_li {
+          list-style: none;
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+    &_part2,
+    &_part3 {
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+      &_li {
+        list-style: none;
+        @media screen and (max-width: 900px) {
+          display: none;
+          visibility: hidden;
+        }
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        &_link {
+          font-size: 1.4rem;
+          color: $Vary-Light-Gray;
+          font-family: $Vietnam;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+    }
+    &_part4 {
+      &_top {
+        margin-bottom: 6.4rem;
+        &_email {
+          max-width: 20.3rem;
+          padding: 1.1rem 1.8rem;
+          border-radius: 3rem;
+          outline: none;
+          border: none;
+          font-size: 1.2rem;
+          color: $Very-Dark-Blue;
+          font-family: $Vietnam;
+          font-weight: 500;
+          margin-right: 0.25rem;
+          &::placeholder {
+            font-size: 1.2rem;
+            color: $Vary-Light-Gray2;
+            font-family: $Vietnam;
+            font-weight: 500;
+          }
+          @media screen and (max-width: 900px) {
+            display: none;
+            visibility: hidden;
+          }
+        }
+        &_btn {
+          font-size: 1.2rem;
+          font-family: $Vietnam;
+          font-weight: 700;
+          color: $Vary-Light-Gray;
+          padding: 1.1rem 2.65rem;
+          text-decoration: none;
+          background-color: $Bright-Red;
+          border-radius: 3rem;
+          margin-left: 0.25rem;
+          &:hover {
+            background-color: rgba(242, 95, 58, 0.6);
+          }
+          @media screen and (max-width: 900px) {
+            display: none;
+            visibility: hidden;
+          }
+        }
+      }
+      &_down {
+        font-size: 1.2rem;
+        font-family: $Vietnam;
+        font-weight: 700;
+        color: #95959d;
+        @media screen and (max-width: 900px) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+    &_mobile {
+      display: none;
+      visibility: hidden;
+
+      width: 80%;
+      @media screen and (max-width: 900px) {
+        display: inline-block;
+        visibility: visible;
+      }
+      @media screen and (max-width: 412px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 358px) {
+        width: 100%;
+      }
+      &_part1 {
+        margin-bottom: 5.8rem;
+        display: flex;
+        justify-content: space-between;
+        &_email {
+          max-width: 20.3rem;
+          padding: 1.1rem 1.8rem;
+          border-radius: 3rem;
+          outline: none;
+          border: none;
+          font-size: 1.2rem;
+          color: $Very-Dark-Blue;
+          font-family: $Vietnam;
+          font-weight: 500;
+          margin-right: 0.25rem;
+          &::placeholder {
+            font-size: 1.2rem;
+            color: $Vary-Light-Gray2;
+            font-family: $Vietnam;
+            font-weight: 500;
+          }
+          @media screen and (max-width: 322px) {
+            width: 16rem;
+          }
+        }
+        &_btn {
+          font-size: 1.2rem;
+          font-family: $Vietnam;
+          font-weight: 700;
+          color: $Vary-Light-Gray;
+          padding: 1.1rem 2.65rem;
+          text-decoration: none;
+          background-color: $Bright-Red;
+          border-radius: 3rem;
+          margin-left: 0.25rem;
+          &:hover {
+            background-color: rgba(242, 95, 58, 0.6);
+          }
+        }
+      }
+      &_lists {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5.3rem;
+        #ll {
+          text-align: right;
+        }
+        &_ul1 {
+          &_li {
+            list-style: none;
+            &:not(:last-child) {
+              margin-bottom: 2rem;
+            }
+            &_link {
+              font-size: 1.4rem;
+              color: $Vary-Light-Gray;
+              font-family: $Vietnam;
+              font-weight: 400;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &_ico {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5.2rem;
+        &_li {
+          list-style: none;
+          &_img {
+            height: 3.3rem;
+          }
+        }
+      }
+      &_logo {
+        text-align: center;
+        margin-bottom: 6rem;
+      }
+      &_para {
+        text-align: center;
+        &_down {
+          font-size: 1.2rem;
+          font-family: $Vietnam;
+          font-weight: 700;
+          color: #95959d;
+        }
+      }
+    }
+  }
+}

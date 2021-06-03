@@ -1,0 +1,77 @@
+.main {
+  &_avatares {
+    &_con {
+      width: 82.9%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 18rem;
+      &_head {
+        font-size: 3rem;
+        font-family: $Vietnam;
+        font-weight: 700;
+        color: $Dark-Blue;
+        margin-bottom: 8.2rem;
+      }
+      &_carts {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 900px) {
+          justify-content: center;
+        }
+        &_cart {
+          &:last-child,
+          &:first-child {
+            @media screen and (max-width: 900px) {
+              display: none;
+              visibility: hidden;
+            }
+          }
+          width: 25%;
+          margin-bottom: 9rem;
+          @media screen and (max-width: 900px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 650px) {
+            width: 70%;
+          }
+          @media screen and (max-width: 500px) {
+            width: 90%;
+          }
+          &_avatar {
+            margin-bottom: 3.1rem;
+          }
+          &_head {
+            font-size: 1.4rem;
+            color: $Dark-Blue;
+            font-family: $Vietnam;
+            font-weight: 700;
+            margin-bottom: 3.1rem;
+          }
+          &_para {
+            font-size: 1.2rem;
+            font-family: $Vietnam;
+            font-family: 500;
+            color: $Vary-Light-Gray2;
+            line-height: 1.6;
+          }
+        }
+      }
+      &_links {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-family: $Vietnam;
+        font-weight: 700;
+        padding: 1.45rem 3.85rem;
+        background-color: $Bright-Red;
+        border-radius: 3.5rem;
+        color: $Vary-Light-Gray;
+        text-decoration: none;
+        box-shadow: 0px 5px 7px rgba(242, 95, 58, 0.5);
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: rgba(242, 95, 58, 0.5);
+        }
+      }
+    }
+  }
+}

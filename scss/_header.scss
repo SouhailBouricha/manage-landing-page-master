@@ -1,0 +1,160 @@
+.header {
+  width: 100%;
+  &_con {
+    width: 82.9%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5.6rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    &_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+      &_li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 3.6rem;
+        }
+        &_link {
+          font-size: 1.1rem;
+          font-family: $Vietnam;
+          font-weight: 700;
+          color: $Dark-Blue;
+          text-decoration: none;
+          &:hover {
+            color: rgba(36, 45, 82, 0.5);
+          }
+        }
+      }
+    }
+    &_links {
+      font-size: 1.1rem;
+      font-family: $Vietnam;
+      font-weight: 700;
+      padding: 1.45rem 3.85rem;
+      background-color: $Bright-Red;
+      border-radius: 3.5rem;
+      color: $Vary-Light-Gray;
+      text-decoration: none;
+      box-shadow: 0px 5px 7px rgba(242, 95, 58, 0.5);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: rgba(242, 95, 58, 0.5);
+      }
+      @media screen and (max-width: 900px) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    &_bg {
+      position: absolute;
+      top: -10rem;
+      right: -5rem;
+      z-index: -2;
+    }
+    &_menu {
+      display: none;
+      visibility: hidden;
+      z-index: 5;
+      @media screen and (max-width: 900px) {
+        display: block;
+        visibility: visible;
+      }
+      &_check:checked ~ &_all {
+        transform: translateX(0%);
+        background-image: linear-gradient(to top, transparent, transparent);
+        display: grid;
+        place-items: center;
+        visibility: visible;
+      }
+      /* &_check:not(:checked) ~ &_all {
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.5) 35%,
+          rgba(255, 255, 255, 0.1) 65%
+        );
+      }*/
+      &_check {
+        display: none;
+        visibility: hidden;
+      }
+      &_label,
+      &_check {
+        z-index: 2;
+      }
+      &_label {
+        display: none;
+        visibility: hidden;
+        @media screen and (max-width: 900px) {
+          display: block;
+          visibility: visible;
+        }
+      }
+      &_all {
+        transform: translateX(100%);
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        place-items: center;
+        display: grid;
+        transition: transform 0.5s ease-in-out, background 0.5s ease-in-out 5s;
+        /* background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.5) 35%,
+          rgba(255, 255, 255, 0.1) 65%
+        );*/
+        &_list {
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3),
+            -1px -1px 20px rgba(0, 0, 0, 0.3);
+          z-index: -1;
+          background-color: rgb(255, 255, 255);
+          width: 82.9%;
+          margin: auto;
+          border-radius: 1rem;
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+          height: 67vh;
+          &_ul {
+            text-align: center;
+            &_li {
+              list-style: none;
+              &:not(:last-child) {
+                //margin-bottom: 3.4rem;
+                margin-bottom: 5rem;
+              }
+              &:first-child {
+                padding-top: 4.5rem;
+              }
+              &:last-child {
+                padding-bottom: 4.5rem;
+              }
+              &_link {
+                font-size: 1.4rem;
+                font-family: $Vietnam;
+                font-weight: 700;
+                color: $Dark-Blue;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

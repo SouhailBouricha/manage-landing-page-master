@@ -1,0 +1,113 @@
+.main {
+  &_fuatures {
+    &_con {
+      width: 82.9%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15.8rem;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+      &_left {
+        width: 50%;
+        @media screen and (max-width: 977px) {
+          width: 45%;
+        }
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          text-align: center;
+        }
+        &_head {
+          font-size: 3rem;
+          font-family: $Vietnam;
+          font-weight: 700;
+          color: $Dark-Blue;
+          margin-bottom: 4.2rem;
+        }
+        &_para {
+          font-size: 1.4rem;
+          font-family: $Vietnam;
+          font-weight: 500;
+          color: $Vary-Light-Gray2;
+          margin-bottom: 4.9rem;
+          line-height: 1.7;
+        }
+      }
+      &_right {
+        width: 50%;
+        @media screen and (max-width: 977px) {
+          width: 55%;
+        }
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+        &_fut {
+          //display: flex;
+          &:not(:last-child) {
+            margin-bottom: 4.6rem;
+          }
+          &_num {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &_links {
+              font-size: 1.7rem;
+              font-family: $Vietnam;
+              font-weight: 700;
+              padding: 0.8rem 2.6rem;
+              background-color: $Bright-Red;
+              color: $Very-Pale-Red;
+              border-radius: 1.9em;
+              margin-right: 3rem;
+              margin-left: 4rem;
+              @media screen and (max-width: 900px) {
+                margin-left: 0rem;
+              }
+              @media screen and (max-width: 467px) {
+                margin-right: 2rem;
+              }
+              @media screen and (max-width: 378px) {
+                margin-right: 1rem;
+              }
+              @media screen and (max-width: 366px) {
+                padding: 0.4rem 2rem;
+              }
+            }
+          }
+          &_rig {
+            &_head {
+              font-size: 1.8rem;
+              font-family: $Vietnam;
+              font-weight: 700;
+              padding-top: 0.3rem;
+              color: $Dark-Blue;
+              margin-bottom: 3rem;
+              @media screen and (max-width: 454px) {
+                font-size: 1.4rem;
+                padding-top: 0.8rem;
+              }
+              @media screen and (max-width: 366px) {
+                padding-top: 0.5rem;
+              }
+            }
+            &_para {
+              font-size: 1.5rem;
+              font-family: $Vietnam;
+              font-weight: 500;
+              color: $Vary-Light-Gray2;
+              margin-left: 4rem;
+              transform: translateX(10.2rem);
+              width: 60%;
+              @media screen and (max-width: 900px) {
+                margin-left: 0rem;
+                transform: translateX(0rem);
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
